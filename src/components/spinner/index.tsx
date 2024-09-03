@@ -1,11 +1,15 @@
 import { cn } from '@/lib/utils'
 import React from 'react'
+import { DynamicOptionsLoadingProps } from 'next/dynamic'
 
 type SpinnerProps = {
   noPadding?: boolean
 }
 
-export const Spinner = ({ noPadding }: SpinnerProps) => {
+export const Spinner = ({ 
+  noPadding, 
+  ...loadingProps 
+}: SpinnerProps & DynamicOptionsLoadingProps) => {
   return (
     <div className={cn('w-full flex justify-center', noPadding ? '' : 'py-10')}>
       <div role="status">
