@@ -26,12 +26,14 @@ function NavBar() {
         <li>Features</li>
         <li>Contact us</li>
       </ul>
-      <Link
-        href="/dashboard"
-        className="bg-orange px-4 py-2 rounded-sm text-white"
-      >
-        Free Trial
-      </Link>
+      <Button asChild className="bg-orange px-4 py-2 rounded-sm text-white">
+        <Link
+            href="/dashboard"
+            // className="bg-orange px-4 py-2 rounded-sm text-white"
+            >
+            Sign Up
+        </Link>
+    </Button>
     </div>
   )
 }
