@@ -50,6 +50,21 @@ const BillingSettings = async (props: Props) => {
           <SubscriptionForm plan={plan!} />
         </Modal>*/}
       </div>
+      <div className="lg:col-span-2">
+        <h3 className="text-xl font-semibold mb-2">Current Plan</h3>
+        <p className="text-sm font-semibold">{plan}</p>
+        {/* <div className="flex gap-2 flex-col mt-2">
+          {planFeatures.map((feature) => (
+            <div
+              key={feature}
+              className="flex gap-2"
+            >
+              <CheckCircle2 className="text-muted-foreground" />
+              <p className="text-muted-foreground">{feature}</p>
+            </div>
+          ))}
+        </div> */}
+      </div>
     </div>
   )
 }

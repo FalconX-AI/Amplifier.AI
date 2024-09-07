@@ -3,6 +3,7 @@
 import { client } from '@/lib/prisma'
 // import { pusherServer } from '@/lib/utils'
 
+//WIP: for pusher integration
 export const onToggleRealtime = async (id: string, state: boolean) => {
   try {
     const chatRoom = await client.chatRoom.update({
