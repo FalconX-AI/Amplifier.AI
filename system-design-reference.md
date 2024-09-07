@@ -145,3 +145,8 @@ Common Elements:
 | (/src/context/use-auth-context.ts)           |
 | - Manages authentication state               |
 +----------------------------------------------+
+
+
+NPM commands
+-- npm install axios 
+-- npm add html-react-parserfor actions/landing/index.ts
