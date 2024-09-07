@@ -4,10 +4,11 @@ import React from 'react'
 type Props = {}
 
 const page = (props: Props) => {
-  return  
+  return( 
   <>
   <InfoBar/>
   </>
+  )
 }
 
 export default page
