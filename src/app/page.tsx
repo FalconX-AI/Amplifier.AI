@@ -16,13 +16,14 @@ import Link from 'next/link'
 
 
 export default async function Home() {
-//need to complete the billing card remember
+  //need to complete the billing card remember
   return (
     <main>
       <NavBar />
+      {/* Hero Section */}
       <section>
-        <div className="flex items-center justify-center flex-col mt-[80px] gap-4 ">
-          <span className="text-orange bg-orange/20 px-4 py-2 rounded-full text-sm">
+        <div className="flex items-center justify-center flex-col mt-[80px] gap-4 px-4 md:px-0">
+          <span className="text-orange bg-orange/20 px-4 py-2 rounded-full text-sm text-center">
             An AI powered sales assistant chatbot
           </span>
           <Image
@@ -30,13 +31,13 @@ export default async function Home() {
             width={500}
             height={100}
             alt="Logo"
-            className="max-w-lg object-contain"
+            className="max-w-full md:max-w-lg object-contain"
           />
-          <p className="text-center max-w-[500px]">
+          <p className="text-center max-w-[500px] text-sm md:text-base">
             Your AI powered sales assistant! Embed Amplifier AI into any website
             with just a snippet of code!
           </p>
-          <Button className="bg-orange font-bold text-white px-4">
+          <Button className="bg-orange font-bold text-white px-6 py-2 rounded-md">
             Start Here
           </Button>
           <Image
@@ -44,22 +45,26 @@ export default async function Home() {
             width={800}
             height={200}
             alt="Logo"
-            className="max-w-full w-full md:max-w-4xl object-contain"
+            className="max-w-full w-full md:max-w-4xl object-contain mt-4"
           />
         </div>
       </section>
-      <section className="flex justify-center items-center flex-col gap-4 mt-10">
-        <h2 className="text-4xl text-center"> Choose what fits you right</h2>
-        <p className="text-muted-foreground text-center max-w-lg">
+
+      {/* Pricing Section */}
+      <section className="flex justify-center items-center flex-col gap-4 mt-10 px-4 md:px-0">
+        <h2 className="text-2xl md:text-4xl text-center"> Choose what fits you right</h2>
+        <p className="text-muted-foreground text-center max-w-lg text-sm md:text-base">
           Our straightforward pricing plans are tailored to meet your needs. If
           {" you're"} not ready to commit you can get started for free.
         </p>
       </section>
-      <div className="flex  justify-center gap-4 flex-wrap mt-6">
+
+      {/* Pricing Cards */}
+      <div className="flex flex-col md:flex-row justify-center gap-4 flex-wrap mt-6 px-4 md:px-0">
         {pricingCards.map((card) => (
           <Card
             key={card.title}
-            className={clsx('w-[300px] flex flex-col justify-between', {
+            className={clsx('w-full md:w-[300px] flex flex-col justify-between', {
               'border-2 border-primary': card.title === 'Unlimited',
             })}
           >
@@ -80,7 +85,7 @@ export default async function Home() {
                 {card.features.map((feature) => (
                   <div
                     key={feature}
-                    className="flex gap-2"
+                    className="flex gap-2 items-center"
                   >
                     <Check />
                     <p>{feature}</p>
