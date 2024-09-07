@@ -6,6 +6,7 @@ import { Button } from '../ui/button';
 import Link from 'next/link';
 import { useState } from 'react';
 
+// WIP: change settings link to dashboard link
 function NavBar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
@@ -66,7 +67,7 @@ function NavBar() {
         <Link href="/dashboard">Sign Up</Link>
       </Button> */}
       <Link 
-      href="/dashboard"
+      href="/settings"
       className='bg-orange px-4 py-2 rounded-sm text-white'
       >
       Try Now
