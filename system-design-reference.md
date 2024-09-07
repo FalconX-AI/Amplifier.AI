@@ -150,3 +150,8 @@ Common Elements:
 NPM commands
 -- npm install axios 
 -- npm add html-react-parserfor actions/landing/index.ts
+
+File Upload:
+-- npm i @uploadcare/react-uploader
+
+
