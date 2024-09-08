@@ -158,4 +158,11 @@ pusher
 npm i pusher
 npm i pusher-js
 
+nodemailer
+npm i nodemailer
+npm i --save-dev @types/nodemailer
+
+OpenAI
+npm install openai
+
 
