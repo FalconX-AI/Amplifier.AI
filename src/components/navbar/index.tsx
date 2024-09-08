@@ -63,15 +63,16 @@ function NavBar() {
       )}
 
       {/* Sign Up Button */}
-      {/* <Button asChild className="bg-orange px-4 py-2 rounded-sm text-white hidden md:block">
-        <Link href="/dashboard">Sign Up</Link>
-      </Button> */}
-      <Link 
+      <Button asChild className="bg-orange px-4 py-2 rounded-sm text-white hidden md:block">
+        <Link href="/dashboard">Try Now</Link>
+      </Button> 
+
+      {/* <Link 
       href="/settings"
       className='bg-orange px-4 py-2 rounded-sm text-white'
       >
       Try Now
-      </Link>
+      </Link> */}
     </div>
   );
 }

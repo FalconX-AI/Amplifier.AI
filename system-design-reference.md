@@ -165,4 +165,8 @@ npm i --save-dev @types/nodemailer
 OpenAI
 npm install openai
 
+Stripe
+npm install Stripe
+npm install @stripe/react-stripe-js @stripe/stripe-js
+
 
