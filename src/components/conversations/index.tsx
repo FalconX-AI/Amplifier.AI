@@ -19,7 +19,7 @@ type Props = {
       }[]
     | undefined
 }
-
+//WIP: need to complete the add, expired
 const ConversationMenu = ({ domains }: Props) => {
   const { register, chatRooms, loading, onGetActiveChatMessages } =
     useConversation()

@@ -47,7 +47,7 @@ export default async function Home() {
             className="max-w-full md:max-w-lg object-contain"
           />
           <p className="text-center max-w-[500px] text-sm md:text-base">
-          4x your revenue with Amplifier AI – an AI-powered sales assistant and lead generation tool. 
+          4X your revenue with Amplifier AI – an AI-powered sales assistant and lead generation tool. 
           Easily embed it into any website with just a snippet of code!
           </p>
           <Button className="bg-orange font-bold text-white px-6 py-2 rounded-md">

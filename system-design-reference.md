@@ -154,4 +154,8 @@ NPM commands
 File Upload:
 -- npm i @uploadcare/react-uploader
 
+pusher
+npm i pusher
+npm i pusher-js
+
 
