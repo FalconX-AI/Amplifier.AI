@@ -37,7 +37,7 @@ export default async function Home() {
       <section>
         <div className="flex items-center justify-center flex-col mt-[80px] gap-4 px-4 md:px-0">
           <span className="text-orange bg-orange/20 px-4 py-2 rounded-full text-sm text-center">
-            An AI powered sales assistant chatbot
+          An AI-powered sales assistant chatbot and lead generation tool
           </span>
           <Image
             src="/images/logo.png"
@@ -47,8 +47,8 @@ export default async function Home() {
             className="max-w-full md:max-w-lg object-contain"
           />
           <p className="text-center max-w-[500px] text-sm md:text-base">
-            Your AI powered sales assistant! Embed Amplifier AI into any website
-            with just a snippet of code!
+          4x your revenue with Amplifier AI – an AI-powered sales assistant and lead generation tool. 
+          Easily embed it into any website with just a snippet of code!
           </p>
           <Button className="bg-orange font-bold text-white px-6 py-2 rounded-md">
             Start Here
