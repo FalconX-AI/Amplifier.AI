@@ -251,7 +251,7 @@ export default async function Home() {
                   </ul>
                   <Link
                     href={`/dashboard?plan=${card.title}`}
-                    className="bg-orange hover:bg-orange/90 text-white font-bold py-3 px-6 rounded-full w-full text-center transition-colors duration-300"
+                    className="bg-[#f3d299] border-orange border-2 p-2 w-full text-center font-bold rounded-md"
                   >
                     Get Started
                   </Link>
