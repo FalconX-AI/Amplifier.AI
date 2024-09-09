@@ -69,7 +69,7 @@ export default function NewProjectForm() {
 
   return (
     <div className="min-h-screen bg-gray-100 p-6">
-      <div className="max-w-2xl mx-auto bg-white rounded-lg shadow p-6">
+      <div className="max-w mx-auto bg-white rounded-lg shadow p-6">
         <h1 className="text-2xl font-bold mb-6">New project</h1>
         <form className="space-y-4" onSubmit={handleSubmit}>
           <div className="space-y-2">
