@@ -2,6 +2,7 @@ import React from 'react'
 
 type Props = {}
 
+
 const PersonIcon = (props: Props) => {
   return (
     <svg

@@ -148,8 +148,8 @@ Common Elements:
 
 
 NPM commands
--- npm install axios 
--- npm add html-react-parserfor actions/landing/index.ts
+npm install axios 
+npm add html-react-parser for actions/landing/index.ts
 
 File Upload:
 -- npm i @uploadcare/react-uploader
@@ -166,7 +166,7 @@ OpenAI
 npm install openai
 
 Stripe
-npm install Stripe
+npm install stripe
 npm install @stripe/react-stripe-js @stripe/stripe-js
 
 

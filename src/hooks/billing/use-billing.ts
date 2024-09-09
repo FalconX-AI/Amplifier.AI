@@ -19,7 +19,9 @@ export const useStripe = () => {
   const onStripeConnect = async () => {
     try {
       setOnStripeAccountPending(true)
+      console.log('Before Stripe Connect API call');
       const account = await axios.get(`/api/stripe/connect`)
+      console.log('After Stripe Connect API call', account);
       if (account) {
         setOnStripeAccountPending(false)
         if (account) {
