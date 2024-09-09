@@ -1,0 +1,28 @@
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [08/Sep/2024 22:26:11] "OPTIONS /generate_leads HTTP/1.1" 200 -
+INFO:root:Searching for keyword: Tech Startups
+INFO:root:Processing post: Don’t start tech startup
+INFO:root:Comment posted successfully on post: Don’t start tech startup
+INFO:root:Comment ID: lm7v5uk
+INFO:root:Comment URL: https://www.reddit.com/r/fatFIRE/comments/w5jsnw/dont_start_tech_startup/lm7v5uk/
+INFO:root:Processing post: Will there ever be new tech startups that beat the big players (Facebook, Amazon, Apple, Microsoft, Google)?
+INFO:root:Comment posted successfully on post: Will there ever be new tech startups that beat the big players (Facebook, Amazon, Apple, Microsoft, Google)?
+INFO:root:Comment ID: lm7v5zq
+INFO:root:Comment URL: https://www.reddit.com/r/startups/comments/corcup/will_there_ever_be_new_tech_startups_that_beat/lm7v5zq/
+INFO:root:Processing post: techStartupsBeLike
+INFO:root:Comment posted successfully on post: techStartupsBeLike
+INFO:root:Comment ID: lm7v63q
+INFO:root:Comment URL: https://www.reddit.com/r/ProgrammerHumor/comments/1dyzh3r/techstartupsbelike/lm7v63q/
+INFO:root:Processing post: 4chan on tech startups
+ERROR:root:Error posting comment on post: 4chan on tech startups
+ERROR:root:Error message: TOO_OLD: "that's a piece of history now; it's too late to reply to it" on field 'parent'
+INFO:root:Processing post: One for those in tech/startups:
+INFO:root:Comment posted successfully on post: One for those in tech/startups:
+INFO:root:Comment ID: lm7v6an
+INFO:root:Comment URL: https://www.reddit.com/r/dontyouknowwhoiam/comments/v2cgf5/one_for_those_in_techstartups/lm7v6an/
+INFO:werkzeug:127.0.0.1 - - [08/Sep/2024 22:26:19] "POST /generate_leads HTTP/1.1" 200 -
