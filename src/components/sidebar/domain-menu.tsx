@@ -26,16 +26,16 @@ const DomainMenu = ({ domains, min }: Props) => {
   const { register, onAddDomain, loading, errors, isDomain } = useDomain()
 
   return (
-    <div className={cn('flex flex-col gap-3', min ? 'mt-6' : 'mt-3')}>
-      <div className="flex justify-between w-full items-center">
+    <div className={cn('flex flex-col', min ? 'mt-6' : 'mt-3')}>
+      <div className="flex items-center justify-between mb-2">
         {!min && <p className="text-xs text-gray-500">DOMAINS</p>}
         <AppDrawer
-          description="add in your domain address to integrate your chatbot"
-          title="Add your business domain"
+          description="Add your domain address to integrate your chatbot"
+          title="Add Business Domain"
           onOpen={
-            <div className="cursor-pointer text-gray-500 rounded-full border-2">
-              <Plus />
-            </div>
+            <Button variant="outline" size="icon">
+              <Plus className="h-4 w-4" />
+            </Button>
           }
         >
           <Loader loading={loading}>
@@ -66,31 +66,30 @@ const DomainMenu = ({ domains, min }: Props) => {
             </form>
           </Loader>
         </AppDrawer>
-      </div>
-      <div className="flex flex-col gap-1 text-ironside font-medium">
-        {domains &&
-          domains.map((domain) => (
-            <Link
-              href={`/settings/${domain.name.split('.')[0]}`}
-              key={domain.id}
-              className={cn(
-                'flex gap-3 hover:bg-white rounded-full transition duration-100 ease-in-out cursor-pointer ',
-                !min ? 'p-2' : 'py-2',
-                domain.name.split('.')[0] == isDomain && 'bg-white'
-              )}
-            >
-              <Image
-                src={`https://ucarecdn.com/${domain.icon}/`}
-                alt="logo"
-                width={20}
-                height={20}
-              />
-              {!min && <p className="text-sm">{domain.name}</p>}
-            </Link>
-          ))}
+        </div>
+      <div className="space-y-1">
+        {domains?.map((domain) => (
+          <Link
+            key={domain.id}
+            href={`/settings/${domain.name.split('.')[0]}`}
+            className={cn(
+              'flex items-center gap-2 p-2 rounded-lg transition-colors',
+              'hover:bg-gray-100 dark:hover:bg-gray-800',
+              domain.name.split('.')[0] === isDomain && 'bg-gray-100 dark:bg-gray-800'
+            )}
+          >
+            <Image
+              src={`https://ucarecdn.com/${domain.icon}/`}
+              alt={domain.name}
+              width={24}
+              height={24}
+              className="rounded-full"
+            />
+            {!min && <span className="text-sm truncate">{domain.name}</span>}
+          </Link>
+        ))}
       </div>
     </div>
   )
 }
-
 export default DomainMenu
