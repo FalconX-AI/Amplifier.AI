@@ -32,8 +32,9 @@ const DomainMenu = ({ domains, min }: Props) => {
         <AppDrawer
           description="Add your domain address to integrate your chatbot"
           title="Add Business Domain"
+          //WIP: changed the div container to button for the sake of simplicity
           onOpen={
-            <Button variant="outline" size="icon">
+            <Button variant="outline" size="icon"> 
               <Plus className="h-4 w-4" />
             </Button>
           }
