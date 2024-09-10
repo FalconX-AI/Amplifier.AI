@@ -1,5 +1,5 @@
-import { clsx, type ClassValue } from "clsx"
-import { twMerge } from "tailwind-merge"
+import { type ClassValue, clsx } from 'clsx'
+import { twMerge } from 'tailwind-merge'
 import PusherClient from 'pusher-js'
 import PusherServer from 'pusher'
 
@@ -39,8 +39,6 @@ export const extractURLfromString = (url: string) => {
 export const extractEmailsFromString = (text: string) => {
   return text.match(/([a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+\.[a-zA-Z0-9_-]+)/gi)
 }
-
-
 
 export const getMonthName = (month: number) => {
   return month == 1

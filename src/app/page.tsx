@@ -193,12 +193,12 @@ export default async function Home() {
             className="max-w-full md:max-w-lg object-contain"
           />
           <h1 className="text-4xl md:text-6xl font-bold tracking-tight">
-            Get more Customers <span className="text-orange">Amplifier AI</span>
+            Get more Customers with <span className="text-orange">Amplifier AI</span>
           </h1>
           <p className="max-w-[600px] text-lg text-muted-foreground">
             Easily embed our AI-powered sales assistant and lead generation tool into any website with just a snippet of code!
           </p>
-          <Button className="bg-orange hover:bg-orange/90 text-white px-8 py-6 text-lg rounded-full transition-all duration-300 shadow-lg hover:shadow-xl">
+          <Button className="bg-orange text-white px-8 py-6 text-lg rounded-full transition-all duration-300 shadow-lg hover:shadow-xl">
             Get Started Now <ChevronRight className="ml-2" />
           </Button>
           <div className="relative w-full max-w-4xl mt-12 rounded-lg overflow-hidden shadow-2xl">

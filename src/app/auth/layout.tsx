@@ -31,7 +31,7 @@ const Layout = async ({ children }: Props) => {
       <div className="hidden lg:flex flex-1 w-full max-h-full max-w-4000px
       overflow-hidden relative bg-cream flex-col pt-10 pl-24 gap-3">
         <h2 className="text-gravel md:text-4xl font-bold">
-          4X your Revenue⚡and Supercharge your Startup with Amplifier
+          ⚡Get more customers and supercharge your Startup with Amplifier AI
         </h2>
       <p className="text-iridium md:text-sm mb-10">
         Capable of transforming your websites customer experience and generating more Direct Leads with our AI-powered ChatBot...{' '}

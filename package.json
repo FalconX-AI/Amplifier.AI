@@ -51,6 +51,7 @@
     "cmdk": "^1.0.0",
     "date-fns": "^3.6.0",
     "embla-carousel-react": "^8.2.0",
+    "framer-motion": "^11.5.4",
     "html-react-parser": "^5.1.15",
     "input-otp": "^1.2.4",
     "ios": "^0.0.1",

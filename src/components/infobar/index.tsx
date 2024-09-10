@@ -12,16 +12,16 @@ const InfoBar = (props: Props) => {
       <BreadCrumb />
       <div className="flex gap-3 items-center">
         <div>
-          <Card className="rounded-xl flex gap-3 py-3 px-4 text-ghost">
+          {/* <Card className="rounded-xl flex gap-3 py-3 px-4 text-ghost">
             <Trash />
             <Star></Star>
-          </Card>
+          </Card> */}
         </div>
-        <Avatar>
+        {/* <Avatar>
           <AvatarFallback className="bg-orange text-white">
             <Headphones />
           </AvatarFallback>
-        </Avatar>
+        </Avatar> */}
         <Avatar>
           <AvatarImage
             src="https://github.com/shadcn.png"
