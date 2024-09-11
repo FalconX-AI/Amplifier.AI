@@ -32,6 +32,7 @@ export async function GET() {
       },
     })
 
+    //WIP: Fake info need to change this on production
     if (account) {
       const approve = await stripe.accounts.update(account.id, {
         business_profile: {
