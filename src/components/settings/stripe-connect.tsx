@@ -8,6 +8,7 @@ type StripeConnectProps = {
   connected: boolean
 }
 
+//fixed prisma 
 export const StripeConnect = ({ connected }: StripeConnectProps) => {
   const { onStripeConnect, onStripeAccountPending } = useStripe()
   return (
