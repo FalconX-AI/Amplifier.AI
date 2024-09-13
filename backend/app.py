@@ -11,7 +11,7 @@ import logging
 load_dotenv()
 
 
-logging.basicConfig(filename='C:/Users/Admin/git/personal/Falcon-Industries/Amplifier.AI/backend/app.log', level=logging.INFO)
+logging.basicConfig(filename='backend/app.log', level=logging.INFO)
 
 app = Flask(__name__)
 CORS(app)
